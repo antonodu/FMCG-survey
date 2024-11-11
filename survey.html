@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>FMCG Research Questionnaire</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZH6WGRTV7G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZH6WGRTV7G');
+</script>
+
+</head>
+<body>
+    <div class="survey-container">
+        <h2>FMCG Research Questionnaire</h2>
+        
+        <div class="progress-bar">
+            <div class="progress-bar-fill" id="progressBar">0%</div>
+        </div>
+
+        <form action="thank-you.html" method="POST" id="surveyform">
+            <!--page1-->
+            <div class="page" id="page1">
+                <h3>Section 1: Demographic Information:</h3>
+
+                <div class="question">
+                    <label>1. What age range category do you fit into?</label>
+                    <label><input type="radio" name="age" value="Under-18" required> Under 18</label>
+                    <label><input type="radio" name="age" value="18-24"> 18-24</label>
+                    <label><input type="radio" name="age" value="24-34"> 24-34</label>
+                    <label><input type="radio" name="age" value="35-44"> 34-44</label>
+                    <label><input type="radio" name="age" value="45 and above"> 45 and above</label>
+                </div>
+
+                <div class="question">
+                    <label>2. Gender:</label>
+                    <label><input type="radio" name="gender" value="Male" required> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                    <label><input type="radio" name="gender" value="Prefer not to say"> Prefer not to say</label>
+                </div>
+
+                <div class="question">
+                    <label>3. Income Level:</label>
+                    <label><input type="radio" name="income" value="Less than ₦30,000" required> Less than ₦30,000</label>
+                    <label><input type="radio" name="income" value="₦30,001 - ₦60,000"> ₦30,001 - ₦60,000</label>
+                    <label><input type="radio" name="income" value="₦60,001 - ₦100,000"> ₦60,001 - ₦100,000</label>
+                    <label><input type="radio" name="income" value="Above ₦100,001"> Above ₦100,001</label>
+                  </div>
+
+                <div class="question">
+                    <label> 4. Location: </label>
+                    <label><input type="radio" name="location" value="Urban" required> Urban</label>
+                    <label><input type="radio" name="location" value="Rural" required> Rural</label>
+                </div>
+
+                <div class="question">
+                    <label> 5. Occupation:</label>
+                    <label><input type="radio" name="occupation" value="student" required> Student</label>
+                    <label><input type="radio" name="occupation" value="employed" required> Employed</label>
+                    <label><input type="radio" name="occupation" value="self-employed" required> Self-employed</label>
+                    <label><input type="radio" name="occupation" value="unemployed" required> Unemployed</label>
+                    <label><input type="radio" name="occupation" value="other" required> Other</label>
+                </div>
+
+                <div class="question">
+                    <label>6. Education Level: </label>
+                    <label><input type="radio" name="education" value="student" required> Primary</label>
+                    <label><input type="radio" name="education" value="employed" required> Secondary</label>
+                    <label><input type="radio" name="education" value="self-employed" required> Self-employed</label>
+                    <label><input type="radio" name="education" value="unemployed" required> Unemployed</label>
+                </div>
+
+                <div class="question">
+                    <label>7. Marital Status: </label>
+                    <label><input type="radio" name="marital_status" value="married" required> Married</label>
+                    <label><input type="radio" name="marital_status" value="single"> Single</label>
+                    <label><input type="radio" name="marital_status" value="divorced/seperated"> Divorced/Seperated</label>
+                </div>
+
+                  <button type="button" onclick="nextPage()">Next</button>
+            </div>
+
+            <div class="page hidden" id="page2">
+                <h3>Section 2: Advertising Awareness & Recall (Cognitive)</h3>
+        
+                <div class="question">
+                  <label>1. Can you recall any recent advertisements for any FMCG products?</label>
+                  <label><input type="radio" name="adRecall" value="Yes" required> Yes</label>
+                  <label><input type="radio" name="adRecall" value="No" required> No</label>
+                </div>
+        
+                <div class="question">
+                  <label>2. Which FMCG brands do you recall seeing advertisements for recently? Please list them.</label>
+                  <textarea name="brands" rows="4" cols="50"></textarea>
+                </div>
+
+                <div class="question">
+                    <label>3. Have you seen or heard any advertisements for FMCG products in the past month?</label>
+                    <label><input type="radio" name="adRecall1" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="adRecall1" value="No" required> No</label>
+                </div>
+
+                <div class="question">
+                    <label> 4. If yes, which brands and products were advertised? Please list them</label>
+                    <textarea name="brands" rows="4" cols="50"></textarea>
+                </div>
+
+                <div class="question">
+                    <label> 5. How influencial were these advertisements in your purchasing decisions?
+                    <label><input type="radio" name="influence" value="Not influencial" required> Not influencial</label>
+                    <label><input type="radio" name="influence" value="Slightly influencial" required> Slightly influencial</label>
+                    <label><input type="radio" name="influence" value="Moderately influencial"  required> Moderately influencial</label>
+                    <label><input type="radio" name="influence" value="Very influencial" required> Very influencial</label>
+                    <label><input type="radio" name="influence" value="Extermely influencial" required> Extermely influencial</label>
+                </div>
+
+                <div class="question">
+                    <label>6. Have you ever tried a new product or switched brands due to an andvertisement</label>
+                    <label><input type="radio" name="products" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="products" value="No"> No</label>
+                </div>
+
+                <div class="question">
+                    <label>7. Have you seen/heard any advertisements for Beverages in the past month?</label>
+                    <label><input type="radio" name="products1" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="products1" value="No"> No</label>
+                </div>
+
+                <div class="question">
+                    <label>8. How familiar are you with Beverages?</label>
+                    <label><input type="radio" name="familiar" value="Not familiar" required> Not familiar</label>
+                    <label><input type="radio" name="familiar" value="Slightly familiar"> Slightly familiar</label>
+                    <label><input type="radio" name="familiar" value="Moderately familiar"> Moderately familiar</label>
+                    <label><input type="radio" name="familiar" value="Very familiar"> Very familiar</label>
+                    <label><input type="radio" name="familiar" value="Extermely familiar"> Extermely familiar</label>
+                </div>
+
+                <div class="question">
+                    <label>9. What sources have you seen/heard Beverages advertised on? (Select all that apply)</label>
+                    <label><input type="checkbox" name="sources" value="TV" required> TV</label>
+                    <label><input type="checkbox" name="sources" value="Radio"> Radio</label>
+                    <label><input type="checkbox" name="sources" value="Social Media"> Social Media</label>
+                    <label><input type="checkbox" name="sources" value="Online Search"> Online Search</label>
+                    <label><input type="checkbox" name="sources" value="Print Media"> Newspaper/Magazines/Books</label>
+                    <label><input type="checkbox" name="sources" value="Other"> Other</label>
+                </div>
+
+                <div class="question">
+                    <label>10. Which specific brands of FMCG products do you currently use for each category? Beverages, Toothpaste, Milk Products</label>
+                    <textarea name="brands" rows="4" cols="50"></textarea>
+                </div>
+
+
+                <div class="question">
+                    <label>11 . Which of the following FMCG products do you use regularly? (Select all that apply) </label>
+                    <label><input type="checkbox" name="familiarity" value="Beverages" required> Beverages (Milo; Ovaltine; Bournvita; Cadbury Chocolate; Twisco) </label>
+                    <label><input type="checkbox" name="familiarity" value="Toothpaste"> Toothpaste (Colgate; Pepsodent; Oral-B; Close-Up; Sensodyne)</label>
+                    <label><input type="checkbox" name="familiarity" value="Milk Products"> Milk products (Peak; Dano; Cowbell; Three Crown; Loyal)</label>
+                </div>
+
+                <div class="question">
+                    <label>12. How often do you purchase these products?</label>
+                    <label><input type="radio" name="purchase_regularly" value="Not familiar" required> Daily</label>
+                    <label><input type="radio" name="purchase_regularly" value="Slightly familiar"> Weekly</label>
+                    <label><input type="radio" name="purchase_regularly" value="Moderately familiar"> Monthly </label>
+                    <label><input type="radio" name="purchase_regularly" value="Very familiar"> Rarely </label>
+                    <label><input type="radio" name="purchase_regularly" value="Extermely familiar"> Never</label>
+                </div>
+                
+        
+                <button type="button" onclick="prevPage()">Previous</button>
+                <button type="button" onclick="nextPage()">Next</button>
+              </div>
+
+              <div class="page hidden" id="page3">
+                <h3>Section 3: Consumer Attitude (Affective)</h3>
+        
+                <div class="question">
+                  <label>1. How do you feel about your preferred brand of beverage?</label>
+                  <label><input type="radio" name="beverageBrandAttitude" value="Very negative" required> Very negative</label>
+                  <label><input type="radio" name="beverageBrandAttitude" value="Somewhat negative"> Somewhat negative</label>
+                  <label><input type="radio" name="beverageBrandAttitude" value="Neutral"> Neutral</label>
+                  <label><input type="radio" name="beverageBrandAttitude" value="Somewhat positive"> Somewhat positive</label>
+                  <label><input type="radio" name="beverageBrandAttitude" value="Very positive"> Very positive</label>
+                </div>
+
+                <div class="question">
+                    2. What words come to mind when thinking of your preferred brand of beverage? (Please state)
+                    <textarea name="describe" rows="4" cols="50"></textarea>
+                </div>
+
+                <div class="question">
+                    <label>3. Would you recommend your preferred brand of beverage to a friend?</label>
+                    <label><input type="radio" name="beverageBrand" value="Yes" required> Yes </label>
+                    <label><input type="radio" name="beverageBrand" value="No"> No</label>
+                    <label><input type="radio" name="beverageBrand" value="Maybe"> Maybe </label>
+                  </div>
+
+        
+                <button type="button" onclick="prevPage()">Previous</button>
+                <button type="button" onclick="nextPage()">Next</button>
+              </div>
+        
+              <!-- Page 4: Brand Preference -->
+              <div class="page hidden" id="page4">
+                <h3>Section 4: Brand Preference (Affective)</h3>
+        
+                <div class="question">
+                  <label>1. Which brand do you prefer for Beverages?</label>
+                  <label><input type="radio" name="preferredBeverageBrand" value="Milo" required> Milo</label>
+                  <label><input type="radio" name="preferredBeverageBrand" value="Ovaltine"> Ovaltine</label>
+                  <label><input type="radio" name="preferredBeverageBrand" value="Bournvita"> Bournvita</label>
+                  <label><input type="radio" name="preferredBeverageBrand" value="Twisco"> Twisco</label>
+                  <label><input type="radio" name="preferredBeverageBrand" value="Cadbury Chocolate"> Cadbury Chocolate</label>
+                  <label><input type="radio" name="preferredBeverageBrand" value="Other"> Other</label>
+                  <textarea name="describe_beverage" rows="1"></textarea>
+                </div>
+
+                <div class="question">
+                    <label>2. Which brand do you prefer for Toothpaste?</label>
+                    <label><input type="radio" name="preferredToothpasteBrand" value="Colgate" required> Colgate</label>
+                    <label><input type="radio" name="preferredToothpasteBrand" value="Pepsodent"> Pepsodent</label>
+                    <label><input type="radio" name="preferredToothpasteBrand" value="Oral-B"> Oral-B</label>
+                    <label><input type="radio" name="preferredToothpasteBrand" value="Sensodyne"> Sensodyne </label>
+                    <label><input type="radio" name="preferredToothpasteBrand" value="Close-Up">  Close-Up </label>
+                    <label><input type="radio" name="preferredToothpasteBrand" value="Other"> Other(Please specify)</label>
+                    <textarea name="describe_toothpaste" rows="1"></textarea>
+                  </div>
+
+
+                <div class="question">
+                    <label>3. Which brand do you prefer for Milk products?</label>
+                    <label><input type="radio" name="preferredMilkBrand" value="Peak" required> Peak</label>
+                    <label><input type="radio" name="preferredMilkBrand" value="Dano"> Dano</label>
+                    <label><input type="radio" name="preferredMilkBrand" value="Cowbell"> Cowbell</label>
+                    <label><input type="radio" name="preferredMilkBrand" value="Loya"> Loya </label>
+                    <label><input type="radio" name="preferredMilkBrand" value="Three Crown">  Three Crown </label>
+                    <label><input type="radio" name="preferredMilkBrand" value="Other"> Other(Please specify)</label>
+                    <textarea name="describe_milkbrand" rows="1"></textarea>
+                  </div>
+
+                  <div class="question">
+                    <label>4. How likely are you to choose your preferred brand of beverage over competitors?</label>
+                    <label><input type="radio" name="preferredBeverageBrand1" value="Very Likley" required> Very Likley</label>
+                    <label><input type="radio" name="preferredBeverageBrand1" value="Unlikley"> Unlikley</label>
+                    <label><input type="radio" name="preferredBeverageBrand1" value="Neutral"> Neutral</label>
+                    <label><input type="radio" name="preferredBeverageBrand1" value="Likley"> Likley </label>
+                    <label><input type="radio" name="preferredBeverageBrand1" value="Very Likley"> Very Likley </label>
+                  </div>
+
+                  <div class="question">
+                    <label>5. How likely are you to choose your preferred brand of toothpaste over competitors?</label>
+                    <label><input type="radio" name="preferredToothpasteBrand1" value="Very Likley" required> Very Likley</label>
+                    <label><input type="radio" name="preferredToothpasteBrand1" value="Unlikley"> Unlikley</label>
+                    <label><input type="radio" name="preferredToothpasteBrand1" value="Neutral"> Neutral</label>
+                    <label><input type="radio" name="preferredToothpasteBrand1" value="Likley"> Likley </label>
+                    <label><input type="radio" name="preferredToothpasteBrand1" value="Very Likley"> Very Likley </label>
+                  </div>
+
+                <button type="button" onclick="prevPage()">Previous</button>
+                <button type="button" onclick="nextPage()">Next</button>
+
+                </div>
+
+                  <div class="page hidden" id="page5">
+                    <h2>Section 5: Purchase Intention/Decisions</h2>
+        
+                    <div class="question">
+                        <label>1. Are you considering purchasing beverage/toothpaste/milk?</label>
+                        <input type="radio" name="purchasing_consideration" value="yes"> Yes
+                        <input type="radio" name="purchasing_consideration" value="no"> No
+                        <input type="radio" name="purchasing_consideration" value="maybe"> Maybe
+                    </div>
+        
+                    <div class="question">
+                        <label>2. How soon do you plan to make a purchase?</label>
+                        <input type="radio" name="purchase_timing" value="today"> Today<br>
+                        <input type="radio" name="purchase_timing" value="week"> Within the next week<br>
+                        <input type="radio" name="purchase_timing" value="month"> Within the next month<br>
+                        <input type="radio" name="purchase_timing" value="three-months"> Within the next 3 months<br>
+                        <input type="radio" name="purchase_timing" value="not-planning"> Not planning to purchase
+                    </div>
+        
+                    <div class="question">
+                        <label>3. How often do you purchase FMCG products?</label>
+                        <input type="radio" name="purchase_frequency" value="daily"> Daily<br>
+                        <input type="radio" name="purchase_frequency" value="weekly"> Weekly<br>
+                        <input type="radio" name="purchase_frequency" value="monthly"> Monthly<br>
+                        <input type="radio" name="purchase_frequency" value="occasionally"> Occasionally<br>
+                        <input type="radio" name="purchase_frequency" value="never"> Never
+                    </div>
+        
+                    <div class="question">
+                        <label>4. What might prevent you from making that purchase? (Please state your reason)</label>
+                        <textarea name="purchase_prevention" rows="4" cols="50"></textarea>
+                    </div>
+
+                    <button type="button" onclick="prevPage()">Previous</button>
+                    <button type="button" onclick="nextPage()">Next</button>
+
+                </div>
+        
+                <!-- Section 6: Influence of Advertising & Purchase Behaviour -->
+                <div class="page hidden" id="page6">
+                    <h2>Section 6: Influence of Advertising & Purchase Behaviour</h2>
+        
+                    <div class="question">
+                        <label>1. Which medium of advertising do you encounter most frequently when purchasing FMCG products?</label>
+                        <input type="checkbox" name="ad_medium" value="television"> Television<br>
+                        <input type="checkbox" name="ad_medium" value="radio"> Radio<br>
+                        <input type="checkbox" name="ad_medium" value="social-media"> Social Media<br>
+                        <input type="checkbox" name="ad_medium" value="billboards"> Billboards<br>
+                        <input type="checkbox" name="ad_medium" value="print"> Print (Newspapers/Magazines)<br>
+                        <input type="checkbox" name="ad_medium" value="online"> Online ads
+                    </div>
+        
+                    <div class="question">
+                        <label>2. How often do advertisements influence your purchasing decisions for FMCG products?</label>
+                        <input type="radio" name="ad_influence_frequency" value="never"> Never<br>
+                        <input type="radio" name="ad_influence_frequency" value="rarely"> Rarely<br>
+                        <input type="radio" name="ad_influence_frequency" value="sometimes"> Sometimes<br>
+                        <input type="radio" name="ad_influence_frequency" value="often"> Often<br>
+                        <input type="radio" name="ad_influence_frequency" value="always"> Always
+                    </div>
+
+                    <div class="question">
+                        <label>3. How influential are advertisements in your decision to purchase FMCG products?</label>
+                        <input type="radio" name="ad_influence_frequency1" value="never"> Not influencial<br>
+                        <input type="radio" name="ad_influence_frequency1" value="rarely"> Slightly influencial<br>
+                        <input type="radio" name="ad_influence_frequency1" value="sometimes"> Moderately influencial<br>
+                        <input type="radio" name="ad_influence_frequency1" value="often"> Very influencial<br>
+                        <input type="radio" name="ad_influence_frequency1" value="always"> Extermely influencial 
+                    
+                    </div>
+
+                    <div class="question">
+                        <label>4. Have you ever tried a new FMCG product based on its advertising?</label>
+                        <label><input type="radio" name="beverageBrand1" value="Yes" required> Yes </label>
+                        <label><input type="radio" name="beverageBrand1" value="No"> No</label>
+                    </div>
+
+                    <div class="question">
+                        <label>5. What type of advertisement content influences your decision the most? </label>
+                        <label><input type="radio" name="decision_making" value="Very Likley" required> Discount Offers</label>
+                        <label><input type="radio" name="decision_making" value="Unlikley"> Product Features</label>
+                        <label><input type="radio" name="decision_making" value="Neutral"> Celebrity Endorsements</label>
+                        <label><input type="radio" name="decision_making" value="Likley"> User Testimonials </label>
+                        <label><input type="radio" name="decision_making" value="Very Likley"> Emotional Appeals </label>
+                    </div>
+
+                    <div class="question">
+                        <label>6. How important is advertising in building your awareness of new FMCG brands and products? </label>
+                        <label><input type="radio" name="awareness" value="Very Likley" required> Not important</label>
+                        <label><input type="radio" name="awareness" value="Unlikley"> Slightly important</label>
+                        <label><input type="radio" name="awareness" value="Neutral"> Moderately important</label>
+                        <label><input type="radio" name="awareness" value="Likley"> Very important </label>
+                        <label><input type="radio" name="awareness" value="Very Likley"> Extermely important </label>
+                    </div>
+                    
+                    <button type="button" onclick="prevPage()">Previous</button>
+                    <button type="button" onclick="nextPage()">Next</button>
+
+                    </div>
+
+        
+                <!-- Section 7: Digital Advertising and Social Media Engagement -->
+                <div class="page hidden" id="page7">
+                    <h2>Section 7: Digital Advertising and Social Media Engagement</h2>
+        
+                    <div class="question">
+                        <label>1. How frequently do you engage with FMCG brands on social media platforms?</label>
+                        <input type="radio" name="social_media_engagement" value="never"> Never<br>
+                        <input type="radio" name="social_media_engagement" value="occasionally"> Occasionally<br>
+                        <input type="radio" name="social_media_engagement" value="sometimes"> Sometimes<br>
+                        <input type="radio" name="social_media_engagement" value="often"> Often<br>
+                        <input type="radio" name="social_media_engagement" value="always"> Always
+                    </div>
+        
+                    <div class="question">
+                        <label>2. Have you ever made a purchase of an FMCG product after seeing an advertisement on social media?</label>
+                        <input type="radio" name="purchase_social_media" value="yes"> Yes<br>
+                        <input type="radio" name="purchase_social_media" value="no"> No
+                    </div>
+
+                    <div class="question">
+                        <label>3. Do you find digital advertisements for FMCG products more engaging than traditional advertisements? </label>
+                        <input type="radio" name="digital_ads" value="yes"> Yes<br>
+                        <input type="radio" name="digital_ads" value="no"> No
+                    </div>
+        
+
+                <button type="button" onclick="prevPage()">Previous</button>
+                <button type="button" onclick="nextPage()">Next</button>
+              </div>
+        
+              <div class="page hidden" id="page8">
+                <h2>Section 8: Brand Loyalty and Purchase Behaviour</h2>
+    
+                <div class="question">
+                    <label>1. How frequently do you engage with FMCG brands on social media platforms?</label>
+                    <input type="radio" name="social_media_engagement1" value="never"> Never<br>
+                    <input type="radio" name="social_media_engagement1" value="occasionally"> Occasionally<br>
+                    <input type="radio" name="social_media_engagement1" value="sometimes"> Sometimes<br>
+                    <input type="radio" name="social_media_engagement1" value="often"> Often<br>
+                    <input type="radio" name="social_media_engagement1" value="always"> Always
+                </div>
+    
+                <div class="question">
+                    <label>2. Have you ever made a purchase of an FMCG product after seeing an advertisement on social media?</label>
+                    <input type="radio" name="purchase_social_media1" value="yes"> Yes<br>
+                    <input type="radio" name="purchase_social_media1" value="no"> No
+                </div>
+
+                <div class="question">
+                    <label>3. How important is product quality compared to brand loyalty when purchasing FMCG products?</label>
+                    <input type="radio" name="productquality" value="never"> Not Important<br>
+                    <input type="radio" name="productquality" value="occasionally"> Slightly important<br>
+                    <input type="radio" name="productquality" value="sometimes"> Moderately important<br>
+                    <input type="radio" name="productquality" value="often"> Very Important<br>
+                    <input type="radio" name="productquality" value="always"> Extremely important
+                </div>
+
+                <div class="question">
+                    <label>4. Do you believe that advertising has a significant impact on your brand loyalty towards FMCG products?</label>
+                    <input type="radio" name="brandloyality" value="yes"> Yes<br>
+                    <input type="radio" name="brandloyality" value="no"> No
+                </div>
+
+                <div class="question">
+                    <label>5. How likely are you to try a new FMCG product from a brand that you are not familiar with?</label>
+                    <label><input type="radio" name="preferredBeverageBrand2" value="Very Likley" required> Very Unlikley</label>
+                        <label><input type="radio" name="preferredBeverageBrand2" value="Unlikley"> Unlikley</label>
+                        <label><input type="radio" name="preferredBeverageBrand2" value="Neutral"> Neutral</label>
+                        <label><input type="radio" name="preferredBeverageBrand2" value="Likley"> Likley </label>
+                        <label><input type="radio" name="preferredBeverageBrand2" value="Very Likley"> Very Likley </label>
+                </div>
+
+                <button type="button" onclick="prevPage()">Previous</button>
+                <button type="button" onclick="nextPage()">Next</button>
+            </div>
+
+            <div class="page hidden" id="page9">
+                <h2>Section 9: Factors Influencing Advertising Effectiveness</h2>
+
+            <div class="question">
+                <label>1. Rate the effectiveness of the following advertising channels (1 - Not effective, 5 - Very effective):</label>
+                <label>Television: </label>
+                <div class="options">
+                    <input type="radio" name="television" value="1"> 1
+                    <input type="radio" name="television" value="2"> 2
+                    <input type="radio" name="television" value="3"> 3
+                    <input type="radio" name="television" value="4"> 4
+                    <input type="radio" name="television" value="5"> 5
+                </div>
+                <label>Social Media:</label>
+                <div class="options">
+                    <input type="radio" name="social_media" value="1"> 1
+                    <input type="radio" name="social_media" value="2"> 2
+                    <input type="radio" name="social_media" value="3"> 3
+                    <input type="radio" name="social_media" value="4"> 4
+                    <input type="radio" name="social_media" value="5"> 5
+                </div>
+                <label>Online ads:</label>
+                <div class="options">
+                    <input type="radio" name="online_ads" value="1"> 1
+                    <input type="radio" name="online_ads" value="2"> 2
+                    <input type="radio" name="online_ads" value="3"> 3
+                    <input type="radio" name="online_ads" value="4"> 4
+                    <input type="radio" name="online_ads" value="5"> 5
+                </div>
+                <label>Radio:</label>
+                <div class="options">
+                    <input type="radio" name="radio" value="1"> 1
+                    <input type="radio" name="radio" value="2"> 2
+                    <input type="radio" name="radio" value="3"> 3
+                    <input type="radio" name="radio" value="4"> 4
+                    <input type="radio" name="radio" value="5"> 5
+                </div>
+            </div>
+        
+            <div class="question">
+                <label>2. How much do you agree with the statement: "Culturally relevant advertisements are more likely to attract your attention."</label>
+                <div class="options">
+                  <label><input type="radio" name="cultural_relevance" value="Strongly agree" required> Strongly Disagree</label>
+                  <label><input type="radio" name="cultural_relevance" value="Disagree"> Disagree</label>
+                  <label><input type="radio" name="cultural_relevance" value="Neutral"> Neutral</label>
+                  <label><input type="radio" name="cultural_relevance" value="Agree"> Agree</label>
+                  <label><input type="radio" name="cultural_relevance" value="Strongly Agree"> Strongly Agree</label>
+                 
+                </div>
+            </div>
+        
+            <div class="question">
+                <label>3. How do you perceive the role of digital advertising compared to traditional advertising in terms of engagement?</label>
+                <div class="options">
+                    <label ><input type="radio" name="digital_vs_traditional" value="Digital is not effective"> Digital is not effective</label>
+                    <label><input type="radio" name="digital_vs_traditional" value="Digital is less effective"> Digital is less effective</label>
+                    <label><input type="radio" name="digital_vs_traditional" value="Digital is equally effective"> Digital is equally effective</label>
+                    <label><input type="radio" name="digital_vs_traditional" value="Digital is very effective"> Digital is very effective</label>
+                    <label><input type="radio" name="digital_vs_traditional" value="Digital is extremely effective"> Digital is extremely effective</label>
+                </div>
+            </div>
+        
+            <div class="question">
+                <label>4. Which factors make an FMCG advertisement memorable for you? (Select all that apply)</label>
+                <div class="options">
+                    <label><input type="checkbox" name="memorable_factors" value="Creativity"> Creativity</label>
+                    <label><input type="checkbox" name="memorable_factors" value="Music/Audio"> Music/Audio</label>
+                    <label><input type="checkbox" name="memorable_factors" value="Visual Appeal"> Visual Appeal</label>
+                    <label><input type="checkbox" name="memorable_factors" value="Relevance to Personal Needs"> Relevance to Personal Needs</label>
+                    <label><input type="checkbox" name="memorable_factors" value="Humour"> Humour</label>
+                </div>
+            </div>
+        
+            <div class="question">
+                <label>5. What recommendations would you give to improve the effectiveness of FMCG advertising?</label>
+                <textarea name="recommendations" rows="4" cols="50"></textarea>
+            </div>
+
+            <button type="button" onclick="prevPage()">Previous</button>
+            <button type="button" onclick="nextPage()">Next</button>
+
+            </div>
+            
+        
+            <!-- Section 10: Advertising and Market Share -->
+             <div class="page hidden" id="page10">
+                <h2>Section 10: Advertising and Market Share</h2>
+        
+            <div class="question">
+                <label>1. How often do you notice advertisements for FMCG products?</label>
+                <div class="options">
+                    <input type="radio" name="notice_ads" value="Never"> Never
+                    <input type="radio" name="notice_ads" value="Rarely"> Rarely
+                    <input type="radio" name="notice_ads" value="Sometimes"> Sometimes
+                    <input type="radio" name="notice_ads" value="Often"> Often
+                    <input type="radio" name="notice_ads" value="Always"> Always
+                </div>
+            </div>
+        
+            <div class="question">
+                <label>2. Which advertising channels influence your purchasing decisions the most? (Select all that apply)</label>
+                <div class="options">
+                    <input type="checkbox" name="purchasing_channels" value="Television"> Television
+                    <input type="checkbox" name="purchasing_channels" value="Radio"> Radio
+                    <input type="checkbox" name="purchasing_channels" value="Social Media"> Social Media
+                    <input type="checkbox" name="purchasing_channels" value="Online Ads"> Online Ads
+                    <input type="checkbox" name="purchasing_channels" value="Billboards"> Billboards
+                    <input type="checkbox" name="purchasing_channels" value="Print Media"> Print Media
+                </div>
+            </div>
+        
+            <div class="question">
+                <label>3. Rate the effectiveness of each advertising channel in influencing your purchasing decisions: (1 - Not effective, 5 - Very effective)</label>
+                <label>Television:</label>
+                <div class="options">
+                    <input type="radio" name="television_effectiveness" value="1"> 1
+                    <input type="radio" name="television_effectiveness" value="2"> 2
+                    <input type="radio" name="television_effectiveness" value="3"> 3
+                    <input type="radio" name="television_effectiveness" value="4"> 4
+                    <input type="radio" name="television_effectiveness" value="5"> 5
+                </div>
+                <label>Radio:</label>
+                <div class="options">
+                    <input type="radio" name="radio_effectiveness" value="1"> 1
+                    <input type="radio" name="radio_effectiveness" value="2"> 2
+                    <input type="radio" name="radio_effectiveness" value="3"> 3
+                    <input type="radio" name="radio_effectiveness" value="4"> 4
+                    <input type="radio" name="radio_effectiveness" value="5"> 5
+                </div>
+
+                <label>Social Media:</label>
+                <div class="options">
+                    <input type="radio" name="social_media_effectiveness" value="1"> 1
+                    <input type="radio" name="social_media_effectiveness" value="2"> 2
+                    <input type="radio" name="social_media_effectiveness" value="3"> 3
+                    <input type="radio" name="social_media_effectiveness" value="4"> 4
+                    <input type="radio" name="social_media_effectiveness" value="5"> 5
+                </div>
+
+                <label>Online Ads:</label>
+                <div class="options">
+                    <input type="radio" name="online_ads_effect" value="1"> 1
+                    <input type="radio" name="online_ads_effect" value="2"> 2
+                    <input type="radio" name="online_ads_effect" value="3"> 3
+                    <input type="radio" name="online_ads_effect" value="4"> 4
+                    <input type="radio" name="online_ads_effect" value="5"> 5
+                </div>
+
+                <label>Billboards:</label>
+                <div class="options">
+                    <input type="radio" name="billboards_effectiveness" value="1"> 1
+                    <input type="radio" name="billboards_effectiveness" value="2"> 2
+                    <input type="radio" name="billboards_effectiveness" value="3"> 3
+                    <input type="radio" name="billboards_effectiveness" value="4"> 4
+                    <input type="radio" name="billboards_effectiveness" value="5"> 5
+                </div>
+
+                <label>Print Media: Newspaper/Magazines</label>
+                <div class="options">
+                    <input type="radio" name="printmedia_effect" value="1"> 1
+                    <input type="radio" name="printmedia_effect" value="2"> 2
+                    <input type="radio" name="printmedia_effect" value="3"> 3
+                    <input type="radio" name="printmedia_effect" value="4"> 4
+                    <input type="radio" name="printmedia_effect" value="5"> 5
+                </div>
+            
+            </div>
+
+            <button type="button" onclick="prevPage()">Previous</button>
+            <button type="button" onclick="nextPage()">Next</button>
+             </div>
+
+             <div class="page hidden" id="page11">
+                <h3>Section 11: Advertising Statergies</h3>
+                
+                <div class="question">
+                  <label>1. What advertising strategies do you find most appealing in FMCG products? :</label>
+                  <label><input type="radio" name="advertising_strategies" value="Under 18" required> Discounts and Promotions</label>
+                  <label><input type="radio" name="advertising_strategies" value="18-24"> Celebrity Endorsements</label>
+                  <label><input type="radio" name="advertising_strategies" value="25-34"> Creative Storytelling</label>
+                  <label><input type="radio" name="advertising_strategies" value="35-44"> User Testimonials</label>
+                  <label><input type="radio" name="advertising_strategies" value="45 and above"> Eco-friendly Messaging</label>
+                  <label><input type="radio" name="advertising_strategies" value="Local Cultural References"> Local Cultural References</label>
+                </div>
+        
+                <div class="question">
+                  <label>2. Which types of advertising messages influence your perception of a brand's reliability and quality?:</label>
+                  <label><input type="radio" name="advertising_messages" value="Male" required> Emotional Appeals</label>
+                  <label><input type="radio" name="advertising_messages" value="Female"> Informational Content</label>
+                  <label><input type="radio" name="advertising_messages" value="Prefer not to say"> Humorous Content</label>
+                  <label><input type="radio" name="advertising_messages" value="Male" required> Traditional Values</label>
+                </div>
+        
+                <div class="question">
+                  <label>3. How important is cultural relevance in advertisements for your engagement with FMCG products?</label>
+                  <label><input type="radio" name="cultural_relevant_engagement" value="Less than ₦30,000" required> Not important</label>
+                  <label><input type="radio" name="cultural_relevant_engagement" value="₦30,001 - ₦60,000"> Slightly important</label>
+                  <label><input type="radio" name="cultural_relevant_engagement" value="₦60,001 - ₦100,000"> Moderately important</label>
+                  <label><input type="radio" name="cultural_relevant_engagement" value="Above ₦100,001"> Very important</label>
+                  <label><input type="radio" name="cultural_relevant_engagement" value="Above ₦100,001"> Extremely important</label>
+                </div>
+        
+                <button type="button" onclick="prevPage()">Previous</button>
+                <button type="button" onclick="nextPage()">Next</button>
+              </div>
+        
+              <!-- Page 12: Advertising Awareness & Recall -->
+              <div class="page hidden" id="page12">
+                <h3>Section 12: Challenges and Opportunities</h3>
+        
+                <div class="question">
+                  <label>1. What challenges do you believe FMCG brands face in effectively reaching consumers through advertising in Nigeria? </label>
+                  <textarea name="brands" rows="4" cols="50"></textarea>
+                </div>
+        
+                <div class="question">
+                  <label>2. Which FMCG brands do you recall seeing advertisements for recently? Please list.</label>
+                  <textarea name="brands" rows="4" cols="50"></textarea>
+                </div>
+
+                <div class="question">
+                    <label>3. How likely are you to try a new FMCG product if it is heavily advertised?</label>
+                    <label><input type="radio" name="newproduct" value="Less than ₦30,000" required> Very unlikely</label>
+                    <label><input type="radio" name="newproduct" value="₦30,001 - ₦60,000"> Unlikely</label>
+                    <label><input type="radio" name="newproduct" value="₦60,001 - ₦100,000"> Neutral</label>
+                    <label><input type="radio" name="newproduct" value="Above ₦100,001"> Likely</label>
+                    <label><input type="radio" name="newproduct" value="Above ₦100,001"> Very likely</label>
+                  </div>
+
+                  <div class="question">
+                    <label>4. Are you more likely to become a repeat buyer of a product if attracted by its advertising?</label>
+                    <label><input type="radio" name="repeatbuyer" value="Less than ₦30,000" required> Very unlikely</label>
+                    <label><input type="radio" name="repeatbuyer" value="₦30,001 - ₦60,000"> Unlikely</label>
+                    <label><input type="radio" name="repeatbuyer" value="₦60,001 - ₦100,000"> Neutral</label>
+                    <label><input type="radio" name="repeatbuyer" value="Above ₦100,001"> Likely</label>
+                    <label><input type="radio" name="repeatbuyer" value="Above ₦100,001"> Very likely</label>
+                  </div>
+
+                  <div class="question">
+                    <label>5. Do you feel that increased advertising leads to a preference for certain FMCG brands over others?</label>
+                    <label><input type="radio" name="ad_leads" value="Less than ₦30,000" required> Strongly disagree</label>
+                    <label><input type="radio" name="ad_leads" value="₦30,001 - ₦60,000"> Disagree</label>
+                    <label><input type="radio" name="ad_leads" value="₦60,001 - ₦100,000"> Neutral</label>
+                    <label><input type="radio" name="ad_leads" value="Above ₦100,001"> Agree</label>
+                    <label><input type="radio" name="ad_leads" value="Above ₦100,001"> Strongly agree </label>
+                  </div>
+        
+                <button type="button" onclick="prevPage()">Previous</button>
+                <button type="button" onclick="nextPage()">Next</button>
+              </div>
+        
+              <!-- Page 13: Consumer Behaviour -->
+              <div class="page hidden" id="page13">
+                <h3>Section 13: Consumer Behaviour and Influence</h3>
+        
+                <div class="question">
+                  <label>1. How frequently do you purchase FMCG products?</label>
+                  <label><input type="radio" name="purchase_fmcg_products" value="Very negative" required> Daily</label>
+                  <label><input type="radio" name="purchase_fmcg_products" value="Somewhat negative"> Weekly</label>
+                  <label><input type="radio" name="purchase_fmcg_products" value="Neutral"> Monthly</label>
+                  <label><input type="radio" name="purchase_fmcg_products" value="Somewhat positive"> Rarely</label>
+                </div>
+
+                <div class="question">
+                    <label>2. Which types of FMCG products do you purchase most frequently? (Select all that apply)</label>
+                    <label><input type="radio" name="typesofproducts" value="Very negative" required> Food and Beverages</label>
+                    <label><input type="radio" name="typesofproducts" value="Somewhat negative"> Personal Care</label>
+                    <label><input type="radio" name="typesofproducts" value="Neutral"> Household Cleaning</label>
+                    <label><input type="radio" name="typesofproducts" value="Somewhat positive"> Other</label>
+                  </div>
+
+                  <div class="question">
+                    <label>3. How often do advertisements influence your decision to try a new FMCG product?</label>
+                    <label><input type="radio" name="ads_influence" value="Very negative" required> Never</label>
+                    <label><input type="radio" name="ads_influence" value="Somewhat negative"> Occasionally</label>
+                    <label><input type="radio" name="ads_influence" value="Neutral"> Often</label>
+                    <label><input type="radio" name="ads_influence" value="Somewhat positive"> Always</label>
+                  </div>
+
+                  <div class="question">
+                    <label>4. Have you ever switched from your regular FMCG brand due to persuasive advertising?</label>
+                    <label><input type="radio" name="fmcgbrand" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="fmcgbrand" value="No"> No</label>
+                  </div>
+        
+                <button type="button" onclick="prevPage()">Previous</button>
+                <button type="button" onclick="nextPage()">Next</button>
+              </div>
+
+              <div class="page hidden" id="page14">
+                <h3>Section 14: Advertising Content and Strategy</h3>
+        
+                <div class="question">
+                  <label>1. Which advertising content types most attract your attention? (Select all that apply)</label>
+                  <label><input type="radio" name="content_type" value="Very negative" required> Discount Offers</label>
+                  <label><input type="radio" name="content_type" value="Somewhat negative"> Celebrity Endorsements</label>
+                  <label><input type="radio" name="content_type" value="Neutral"> Emotional Storytelling</label>
+                  <label><input type="radio" name="content_type" value="Somewhat positive"> Testimonials and Reviews</label>
+                  <label><input type="radio" name="content_type" value="Neutral"> Product Benefits and Features</label>
+                  <label><input type="radio" name="content_type" value="Somewhat positive"> Humorous Content</label>
+                </div>
+
+                <div class="question">
+                    <label>2. How important is the cultural relevance of advertising in your decision-making process?</label>
+                    <label><input type="radio" name="cultural_relevance1" value="Very negative" required> Not important</label>
+                    <label><input type="radio" name="cultural_relevance1" value="Somewhat negative"> Moderately important</label>
+                    <label><input type="radio" name="cultural_relevance1" value="Neutral"> Very important</label>
+                    <label><input type="radio" name="cultural_relevance1" value="Somewhat positive"> Extremely important</label>
+                  </div>
+
+                  <div class="question">
+                    <label>3. Do you prefer advertisements that are informative or entertaining?</label>
+                    <label><input type="radio" name="informative_ads" value="Very negative" required> Informative</label>
+                    <label><input type="radio" name="informative_ads" value="Somewhat negative"> Entertaining</label>
+                    <label><input type="radio" name="informative_ads" value="Neutral"> Both</label>
+                  </div>
+        
+                <button type="button" onclick="prevPage()">Previous</button>
+                <button type="button" onclick="nextPage()">Next</button>
+              </div>
+
+              <div class="page hidden" id="page15">
+                <h3>Section 15: Advertising Expenditure and Market Share Growth</h3>
+        
+                <div class="question">
+                  <label>1. How often do you notice advertisements for FMCG products?</label>
+                  <label><input type="radio" name="fmcg_ads" value="Very negative" required> Never</label>
+                  <label><input type="radio" name="fmcg_ads" value="Somewhat negative"> Rarely</label>
+                  <label><input type="radio" name="fmcg_ads" value="Neutral"> Sometimes</label>
+                  <label><input type="radio" name="fmcg_ads" value="Somewhat positive"> Often</label>
+                  <label><input type="radio" name="fmcg_ads" value="Neutral">Always</label>
+                </div>
+
+                <div class="question">
+                    <label>2. How influential are advertisements in your decision to purchase FMCG products?</label>
+                    <label><input type="radio" name="influencial_ads" value="Very negative" required> Not influential</label>
+                    <label><input type="radio" name="influencial_ads" value="Somewhat negative">Slightly influential</label>
+                    <label><input type="radio" name="influencial_ads" value="Neutral">Moderately influential</label>
+                    <label><input type="radio" name="influencial_ads" value="Somewhat positive"> Very influential</label>
+                    <label><input type="radio" name="influencial_ads" value="Somewhat positive"> Extremely influential</label>
+                  </div>
+
+                  <div class="question">
+                    <label>3. To what extent do you believe increased advertising leads to increased market share for FMCG brands?</label>
+                    <label><input type="radio" name="advertising_leads" value="Very negative" required> Strongly disagree</label>
+                    <label><input type="radio" name="advertising_leads" value="Somewhat negative"> Disagree</label>
+                    <label><input type="radio" name="advertising_leads" value="Neutral"> Neutral</label>
+                    <label><input type="radio" name="advertising_leads" value="Somewhat positive"> Agree</label>
+                    <label><input type="radio" name="advertising_leads" value="Somewhat positive"> Strongly agree</label>
+                  </div>
+        
+                <button type="button" onclick="prevPage()">Previous</button>
+                <button type="button" onclick="nextPage()">Next</button>
+              </div>
+
+              <div class="page hidden" id="page16">
+                <h3>Section 16: Advertising Channels Effectiveness </h3>
+        
+                <div class="question">
+                  <label>1. Which advertising channels influence your purchasing decisions the most? (Select all that apply)</label>
+                  <label><input type="checkbox" name="influence_purchase" value="Very negative" required> Television</label>
+                  <label><input type="checkbox" name="influence_purchase" value="Somewhat negative"> Radio</label>
+                  <label><input type="checkbox" name="influence_purchase" value="Neutral"> Social Media</label>
+                  <label><input type="checkbox" name="influence_purchase" value="Somewhat positive"> Online Ads</label>
+                  <label><input type="checkbox" name="influence_purchase" value="Neutral"> Billboards</label>
+                  <label><input type="checkbox" name="influence_purchase" value="Neutral"> Print Media</label>
+                </div>
+
+                <div class="question">
+                    <label>2. How influential are advertisements in your decision to purchase FMCG products?</label>
+                    <label>Television:</label>
+                <div class="options">
+                    <input type="radio" name="television_effectiveness1" value="1"> 1
+                    <input type="radio" name="television_effectiveness1" value="2"> 2
+                    <input type="radio" name="television_effectiveness1" value="3"> 3
+                    <input type="radio" name="television_effectiveness1" value="4"> 4
+                    <input type="radio" name="television_effectiveness1" value="5"> 5
+                </div>
+                <label>Radio:</label>
+                <div class="options">
+                    <input type="radio" name="radio_effectiveness1" value="1"> 1
+                    <input type="radio" name="radio_effectiveness1" value="2"> 2
+                    <input type="radio" name="radio_effectiveness1" value="3"> 3
+                    <input type="radio" name="radio_effectiveness1" value="4"> 4
+                    <input type="radio" name="radio_effectiveness1" value="5"> 5
+                </div>
+
+                <label>Social Media:</label>
+                <div class="options">
+                    <input type="radio" name="social_effectiveness2" value="1"> 1
+                    <input type="radio" name="social_effectiveness2" value="2"> 2
+                    <input type="radio" name="social_effectiveness2" value="3"> 3
+                    <input type="radio" name="social_effectiveness2" value="4"> 4
+                    <input type="radio" name="social_effectiveness2" value="5"> 5
+                </div>
+
+                <label>Online Ads:</label>
+                <div class="options">
+                    <input type="radio" name="online_effectiveness" value="1"> 1
+                    <input type="radio" name="online_effectiveness" value="2"> 2
+                    <input type="radio" name="online_effectiveness" value="3"> 3
+                    <input type="radio" name="online_effectiveness" value="4"> 4
+                    <input type="radio" name="online_effectiveness" value="5"> 5
+                </div>
+
+                <label>Billboards:</label>
+                <div class="options">
+                    <input type="radio" name="billboards_effectiveness2" value="1"> 1
+                    <input type="radio" name="billboards_effectiveness2" value="2"> 2
+                    <input type="radio" name="billboards_effectiveness2" value="3"> 3
+                    <input type="radio" name="billboards_effectiveness2" value="4"> 4
+                    <input type="radio" name="billboards_effectiveness2" value="5"> 5
+                </div>
+
+                <label>Print Media:</label>
+                <div class="options">
+                    <input type="radio" name="printmedia_effect2" value="1"> 1
+                    <input type="radio" name="printmedia_effect2" value="2"> 2
+                    <input type="radio" name="printmedia_effect2" value="3"> 3
+                    <input type="radio" name="printmedia_effect2" value="4"> 4
+                    <input type="radio" name="printmedia_effect2" value="5"> 5
+                </div>
+
+                  </div>
+
+                  <div class="question">
+                    <label>3. Which social media platforms do you find most influential for FMCG advertising? (Select all that apply)</label>
+                    <label><input type="radio" name="social_media_influence" value="Very negative" required> Facebook</label>
+                    <label><input type="radio" name="social_media_influence" value="Somewhat negative"> Instagram</label>
+                    <label><input type="radio" name="social_media_influence" value="Neutral"> Twitter/X</label>
+                    <label><input type="radio" name="social_media_influence" value="Somewhat positive"> TikTok</label>
+                    <label><input type="radio" name="social_media_influence" value="Somewhat positive"> YouTube</label>
+                    <label><input type="radio" name="social_media_influence" value="Somewhat positive"> WhatsApp</label>
+                  </div>
+
+                  <div class="question">
+                    <label>4. To what extent do you believe increased advertising leads to increased market share for FMCG brands?</label>
+                    <label><input type="radio" name="marketshares" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="marketshares" value="No"> No</label>
+               
+                  </div>
+
+               
+                <button type="button" onclick="prevPage()">Previous</button>
+                <button type="button" onclick="nextPage()">Next</button>
+              </div>
+
+              <div class="page hidden" id="page17">
+                <h3>Section 17: Advertising Strategies and Market Share Growth </h3>
+
+                <div class="question">
+                    <label>1. Which advertising strategies do you find most appealing in FMCG products? (Select all that apply)</label>
+                    <label><input type="checkbox" name="ad_strategy" value="Very negative" required> Discounts and Promotions</label>
+                    <label><input type="checkbox" name="ad_strategy" value="Somewhat negative"> Celebrity Endorsements</label>
+                    <label><input type="checkbox" name="ad_strategy" value="Neutral"> Creative Storytelling </label>
+                    <label><input type="checkbox" name="ad_strategy" value="Somewhat positive"> User Testimonials</label>
+                    <label><input type="checkbox" name="ad_strategy" value="Neutral"> Eco-friendly Messaging</label>
+                    <label><input type="checkbox" name="ad_strategy" value="Neutral"> Local Cultural References</label>
+                  </div>
+                  
+                  <div class="question">
+                    <label>2. Rate the importance of cultural relevance in advertisements for your engagement with FMCG products:</label>
+                    <label><input type="radio" name="cultural_relevance_ads" value="Very negative" required> Not important</label>
+                    <label><input type="radio" name="cultural_relevance_ads" value="Somewhat negative"> Slightly important</label>
+                    <label><input type="radio" name="cultural_relevance_ads" value="Neutral"> Moderately important</label>
+                    <label><input type="radio" name="cultural_relevance_ads" value="Somewhat positive"> Very important</label>
+                    <label><input type="radio" name="cultural_relevance_ads" value="Neutral"> Extremely important</label>
+                  </div>
+  
+                <button type="button" onclick="prevPage()">Previous</button>
+                <button type="button" onclick="nextPage()">Next</button>
+
+              </div>
+
+              <div class="page hidden" id="page18">
+                <h3>Section 18: Consumer Preferences and Buying Behaviour </h3>
+
+                <div class="question">
+                    <label>1. How likely are you to switch from your regular FMCG brand if persuaded by an advertisement?</label>
+                    <label><input type="radio" name="switch_brands" value="Very negative" required> Very unlikely</label>
+                    <label><input type="radio" name="switch_brands" value="Somewhat negative">Unlikely</label>
+                    <label><input type="radio" name="switch_brands" value="Neutral"> Neutral </label>
+                    <label><input type="radio" name="switch_brands" value="Somewhat positive"> Likely</label>
+                    <label><input type="radio" name="switch_brands" value="Neutral"> Very Likely </label>
+                  </div>
+                  
+                  <div class="question">
+                    <label>2. Are you more likely to remain loyal to a brand that frequently advertises?</label>
+                    <label><input type="radio" name="brandloyality1" value="Very negative" required> Strongly disagree</label>
+                    <label><input type="radio" name="brandloyality1" value="Somewhat negative"> Disagree</label>
+                    <label><input type="radio" name="brandloyality1" value="Neutral"> Neutral</label>
+                    <label><input type="radio" name="brandloyality1" value="Somewhat positive"> Agree</label>
+                    <label><input type="radio" name="brandloyality1" value="Neutral"> Strongly agree</label>
+                  </div>
+                  
+                  <button type="button" onclick="prevPage()">Previous</button>
+                  <button type="button" onclick="nextPage()">Next</button>
+
+                </div>
+
+                  <!--Section 11: Feedback and Recommendations-->
+                  <div class="page hidden" id="page19">
+                    <h3>Section 11: Feedback and Recommendations </h3>
+    
+                    <div class="question">
+                        <label>1. How likely are you to switch from your regular FMCG brand if persuaded by an advertisement?</label>
+                        <textarea name="advertisement" rows="4" cols="50"></textarea>
+                      </div>
+
+                    <div class="question">
+                        <label>2. How can FMCG companies better tailor their advertisements to meet consumer preferences and needs?</label>
+                        <textarea name="advertisement" rows="4" cols="50"></textarea>
+                    </div>
+
+                    <div class="question">
+                        <label>3. Do you have any specific feedback on the advertising content or messaging of FMCG brands in Nigeria?</label>
+                        <textarea name="advertisement" rows="4" cols="50"></textarea>
+                    </div>
+
+                    <div class="question">
+                        <label>4. Would you like to see more sustainability or social responsibility themes in FMCG advertisements in Nigeria?</label>
+                        <textarea name="advertisement" rows="4" cols="50"></textarea>
+                    </div>
+
+                <button type="button" onclick="prevPage()">Previous</button>
+                <button type="button" onclick="nextPage()">Next</button>
+
+                </div>
+
+                <!--Section 12: Feedback and Recommendations-->
+                <div class="page hidden" id="page20">
+                    <h3>Section 12: General Information </h3>
+    
+                    <div class="question">
+                        <label>1.How often do you purchase FMCG products online?</label>
+                        <label><input type="radio" name="online_purchase" value="Very negative" required> Never</label>
+                        <label><input type="radio" name="online_purchase" value="Somewhat negative">Occasionally</label>
+                        <label><input type="radio" name="online_purchase" value="Neutral"> Sometimes </label>
+                        <label><input type="radio" name="online_purchase" value="Somewhat positive"> Often</label>
+                        <label><input type="radio" name="online_purchase" value="Neutral"> Always </label>
+                      </div>
+                      
+                      <div class="question">
+                        <label>2. How do you usually learn about new FMCG products in the market?</label>
+                        <label><input type="radio" name="aboutnewproducts" value="Very negative" required> Television</label>
+                        <label><input type="radio" name="aboutnewproducts" value="Somewhat negative"> Radio</label>
+                        <label><input type="radio" name="aboutnewproducts" value="Neutral"> Social Media</label>
+                        <label><input type="radio" name="aboutnewproducts" value="Somewhat positive"> Billboards</label>
+                        <label><input type="radio" name="aboutnewproducts" value="Neutral"> Print Media (Newspapers/Magazines)</label>
+                      </div>
+
+                      <div class="question">
+                        <label>3. Are you more likely to purchase FMCG products from well-known brands or from lesser-known brands with appealing advertisements?</label>
+                        <label><input type="radio" name="appealing_ads" value="Very negative" required> Very unlikely</label>
+                        <label><input type="radio" name="appealing_ads" value="Somewhat negative"> Unlikely</label>
+                        <label><input type="radio" name="appealing_ads" value="Neutral"> Neutral</label>
+                        <label><input type="radio" name="appealing_ads" value="Somewhat positive"> Likley</label>
+                        <label><input type="radio" name="appealing_ads" value="Neutral"> Very Likley</label>
+                      </div>
+
+                      <div class="question">
+                        <label>4. Would you be interested in receiving promotional offers or discounts from FMCG brands through advertising channels? </label>
+                        <label><input type="radio" name="advertising_channels" value="Yes" required> Yes</label>
+                        <label><input type="radio" name="advertising_channels" value="No"> No</label>
+                   
+                      </div>
+                      
+                      <button type="button" onclick="prevPage()">Previous</button>
+                      <button type="submit" value="submit">Submit</button>
+                      
+    
+                    </div>
+    
+
+
+            </form>
+          </div>
+        </form>
+    </div>
+ <script src="script.js"></script>
+    
+</body>
+</html>
